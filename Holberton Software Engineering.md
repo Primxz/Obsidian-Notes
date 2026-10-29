@@ -328,7 +328,30 @@ You must simulate execution starting from the initial state and continue until a
 
 hate this shiiiiiiiiiiiiiiiiiiiiiiiiiiiit
 
-### **The Git and GitHub**
+#### **The Git and GitHub**
+
+How to set up a repository:
+
+1. git --version (just to be sure not really needed every time)
+2. git config --global user.name studentaccount4fun
+3. git config --global user.email 15707@holbertonstudents.com
+4. initialise git (git init) 
+5. create a project folder (directory) under /root
+6. git status
+7. actually make the repository on github
+8. then connect = git remote add origin (your url for the repo)
+9. To check if it's working type (git remote -v)
+
+
+studentaccount4fun
+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
+
+git pull origin main --allow-unrelated-histories
+
+git config --global credential.helper store
+
+
+How to commit and push files:
 
 Git commands:
 
@@ -340,28 +363,30 @@ mkdir = create new directory
 touch = new note or file
 
 
-
 In repository:
-
 
 
 Origin  = 
 
 Main = Your branch
 
+
+git clone = setup repository in terminal
 git fetch = fetches updates
 git status = status of repository
 git add = tracking new file
 git diff = shows exact lines added and removed
 git diff --staged = shows what you've staged that will go into next commit
 git diff --cached = see what you've staged so far
-git commit -m = commiting a file 
+git commit -m = commiting a file (this needs a description)
 git add = adds file to staging area
 git remote = lists shortnames of each remote handle you've specified
 -v = lists remote handles as URLS
 git branch -M main = sets your branch to main
 git checkout -b "something" = creating and switching to a new branch
 cat = opens file in a directory
+
+git config --global credential.helper store
 
 figure out later:
 
@@ -374,15 +399,146 @@ git tag -a v1 -m "stable version"
 
 If you're struggling with how you make changes to a document or how the process works brush up on this [link](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
 
+What was I doing?
+
+I just have extra commits.
+
+
 
 https://github.com/studentaccount4fun/holbertonschool-github-flow.git
 
 https://github.com/hbtn-edu/github-collab-basegit 
+#### **Shell, Basics**
+
+What is the shell?
+
+"Simply put, the shell is a program that takes commands from the keyboard and gives them to the operating system to perform."
+
+Shell Commands:
+
+pwd = Print working directory
+ls = list files and directories
+cd = change directory
+less = allows viewing a text file
+
+
+moar shell comands
+
+head = prints the first line of text files
+tail = prints the end/last 10 lines of a text file
+find = used to search for files in directories depending on how you type it out
+wc = prints word count of a text file
+sort = rearranges lines of a text file in the order specified
+uniq = used to remove duplicate lines in text files
+grep = used to search for specific lines in text files
+tr = translates files into other things depending on what is specified
+echo = prints text or can be used to edit text files
+
+chmod u+x = Makes files in the shell executable
 
 
 
 
-#### **Resources for all topicsssss** **
+
+
+
+**Permissions**
+
+[chmod](https://linuxcommand.org/lc3_man_pages/chmod1.html) - modify file access rights
+[su](https://linuxcommand.org/lc3_man_pages/su1.html) - temporarily become the superuser
+[sudo](https://linuxcommand.org/lc3_man_pages/sudo8.html) - temporarily become the superuser
+[chown](https://linuxcommand.org/lc3_man_pages/chown1.html) - change file ownership
+[chgrp](https://linuxcommand.org/lc3_man_pages/chgrp1.html) - change a file's group ownership
+
+![[Pasted image 20261027144204.png]]
+
+#!/bin/bash - start of every file
+chmod u+x - to make scripts exe
+
+Task 1 - Pretty simple, it asks for a script to switch users. The command su does that so the script is just (su betty).
+
+Task 2 - a little more difficult but I looked up what commands print names in shell and came up with this. (whoami)
+
+Task 3 - It's a little difficult when these commands can be interchanged for different things, but one you start getting creative it makes sense. It's chown betty hello. This I felt I had to intuit but it's possible.
+
+Task 4 - This one is pretty self evident. I've been using touch to make files since the admissions portal lol.
+
+5 - This one is actually so cheeky. It's the command for execute permissions and then the name of whoever. I honestly couldn't figure this one out so I searched it up.
+
+6 - 
+
+FIX THIS SHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIT!!!!!!!!!
+
+
+task 0 = echo "Hello, World"
+task 1 = echo "\"(Ôo)'" (not sure why this one didn't work I don't think it has anything to do with the code itself as something else before it isn't correcting but if that means going into the terminal and doing something I'm fucked lol)
+task 2 = cat /etc/passwd
+task 3 = cat /etc/passwd /etc/hosts
+task 4 = tail /etc/passwd
+task 5 = head -n 10  5-firstlines (-n denotes the number of lines you want to print for a file)
+task 6 = head -n 3 iacta 
+task 7 = echo "Best School" > \\\*\\\\\'\"Best\ School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*:\)
+task 8 = ls -la > ls_cwd_content
+task 9 = tail -n 1 iacta >> iacta
+task 10 =
+task 11 =
+task 12 =
+task 13 =
+task 14 =
+task 15 =
+task 16 =
+task 17 =
+task 18=
+task 19 =
+task 20 =
+task 21 =
+task 22 =
+
+
+
+https://linuxcommand.org/lc3_lts0070.php
+
+
+
+
+
+
+
+https://mywiki.wooledge.org/BashGuide/SpecialCharacters
+
+
+
+
+
+
+
+
+
+### **Emacs**
+
+Emacs aims to be a modular and granularly editable text editing software that allows users to customise it to their own liking.
+
+
+Buffer: Where you read and write text.
+
+#### **Dockers**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### **Resources for all topicsssss** **
 
 **Understanding Computational Thinking**
 [Computational Thinking](https://www.bbc.co.uk/bitesize/topics/z7tp34j)
@@ -454,6 +610,19 @@ Understanding Computer Operations
 [https://www.youtube.com/watch?v=26QPDBe-NB8](https://intranet.hbtn.io/rltoken/VUnF6euYuzqSTjCYoxWzCQ)
 [https://www.youtube.com/watch?v=26QPDBe-NB8](https://intranet.hbtn.io/rltoken/VUnF6euYuzqSTjCYoxWzCQ)
 
+Emacs
+
+[Beginners Guide to Emacs](https://www.masteringemacs.org/article/beginners-guide-to-emacs)
+[Keyboard Macros Are Misunderstood](https://www.masteringemacs.org/article/keyboard-macros-are-misunderstood)
+[Emacs Docs](https://emacsdocs.org/docs/emacs/The-Emacs-Editor)
+
+Vi (Vimm)
+
+[Basic Vi Commands](https://www.cs.colostate.edu/helpdocs/vi.html)
+
+Shell Basics
+
+[What is the shell?](https://linuxcommand.org/lc3_lts0010.php)
 
 ### C++ Tutorial
 
