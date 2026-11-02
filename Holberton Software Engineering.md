@@ -1,4 +1,4 @@
-What are you doing this for?
+[What are you doing this for?
 
 - fundamentals over basic tools learning
 - social cognitive conflict (learn by doing)
@@ -857,3 +857,4 @@ ABOUT.HTML
 
 
 
+](https://www.reddit.com/r/riftboundtcg/comments/1xm1yg5/riot_what_are_we_doing_here/)
